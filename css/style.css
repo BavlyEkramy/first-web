@@ -1,0 +1,558 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    letter-spacing: 0.3px;
+    font-family: Arial,Heivetica,sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.header-title , .left , .right , .choose ul li, .scroll-1-item , .scroll-2-item ,.News ul li , .blog ul li {
+    float:left;
+}
+.home-overlay , .scroll-1-overlay , .scroll-2-overlay , .Team-overlay , .Team img , .welcome-item , .Featured-item:after , .welcome-hvr:hover::after , .songs-hvr:hover::after , .Pricing-item:hover::after , .Team-item:hover .Team-hvr , .News-item:hover::after {
+    height: 100%;
+    width: 100%;
+}
+.header{
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(0,0,0,0.7);
+    line-height: 50px;
+}
+.header-title{
+    margin-left: 8vw;
+    height: 50px;
+    width: 100px;
+    border-radius: 25px;
+}
+.header li {
+    margin-left: 18px;
+    list-style-type: none;
+    font-size: 20px
+}
+.header .contact{
+    margin-right: 8vw;
+}
+.header li:after{
+    height: 3px;
+    width: 0px;
+    left: 0;
+    bottom: 11px;
+    background-color: #6195ff;
+    content: "";
+    position: absolute;
+}
+.header li:hover::after{
+    width: 100%;
+    transition: 0.7s
+}
+/********************* home **********************/
+.home{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../image/img4.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+.home-overlay , .scroll-1-overlay , .scroll-2-overlay , .Team img , .Featured-item:after{
+    background-color:rgba(0,0,0,0.7);
+}
+.home-contact ,.Featured-overlay{
+    width: 70%;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.home h2 {
+    font-size: 58px ;
+    text-transform: uppercase
+}
+.home p , .Pricing .free {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.home-btn{
+    height: 55px;
+    width:150px;
+    background-color: #156ffa;
+    color:white;
+    font-size: 19px;
+    border: 0;
+    border-radius: 7px
+}
+.home-btn:hover , .welcome-item .i , .songs .i ,.Featured-item:hover::after{
+    opacity: 0.8;
+}
+.home .start{
+    margin-right: 10px;
+    background-color:white;
+    color: black
+}
+/*************** welcome & some Featured & songs & some Pricing & some Team ***************/
+.welcome , .songs , .choose , .Pricing , .Team , .News{
+    height: 90vh;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top:10vh;
+}
+.welcome-contact , .songs-contact , .choose-contact , .Pricing-contact ,.Team-contact , .News-contact{
+    height: 70vh;
+    width: 80%;
+    margin: auto
+}
+.welcome-title , .Featured-title , .songs-title, .choose-title , .Pricing-title ,.Team-title , .News-title{
+    font-size: 34px;
+    padding-top:3vh;
+    margin-bottom: 12vh;
+    line-height: 60px;
+    position: relative
+}
+.welcome-title:after , .Featured-title:after , .songs-title:after , .choose-title:after , .Pricing-title:after , .Team-title:after ,.News-title:after {
+    position: absolute;
+    content: "";
+    height: 4px;
+    width: 5%;
+    bottom: 0;
+    left: 47.5%;
+    background-color:  #028cf2
+}
+.welcome-hvr , .Featured-item , .songs-hvr , .Pricing-item ,.Team-item ,.News-item{
+    height: 28vh;
+    width: 30%;
+    float: left;
+    border: 1px solid rgba(0,0,0,0.4) ;
+    position: relative
+}
+.welcome .wit , .Featured .fit , .songs .oit , .Pricing .Pit ,.Team .tit ,.News .nit{
+    margin: 0px 5%;
+}
+.welcome-item .i , .songs .i{
+    padding-top: 7%;
+    font-size: 28px;
+    color: #028cf2;
+}
+.welcome-p1 , .songs-p1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 15px 0px
+}
+.welcome-p2 , .songs-p2 {
+    letter-spacing: 2px;
+    width: 96%;
+    margin: 0% 2% 15px;
+    color: #a4a4a4;
+    font-size: 18px;
+}
+.welcome a ,.Featured-ctog ,.News ul li i , .News-p3 , .header a{
+    color: #6195ff;
+}
+.welcome-hvr:after , .songs-hvr:after , .Pricing-item:after ,.Team-hvr , .News-item:after {
+    content: "";
+    height: 0%;
+    width: 0%;
+    background-color: rgba(0,0,0,0.8);
+}
+.welcome-hvr:hover::after , .songs-hvr:hover::after , .Pricing-item:hover::after , .Team-item:hover .Team-hvr , .News-item:hover::after{
+    transition: 0.6s;
+    opacity: 1
+}
+.welcome-hvr:hover .welcome-p1 , .songs-hvr:hover .songs-p1 , .Team-item:hover .Team-name{
+    color: white;
+    transition: 0.5s;
+}
+.home-overlay , .scroll-1-overlay , .scroll-2-overlay , .Team-overlay , .Team img , .welcome-hvr:after , .songs-hvr:after , .Pricing-item:after ,.Team-hvr , .News-item:after , .Featured-item:after , .welcome-item , .songs-i {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.header ,.welcome-item ,.Featured-overlay, .songs-item , .songs-i{
+     z-index: 2;   
+}
+/*************** some Featured  *******************/
+.Featured{
+    height: 150vh ;
+    width: 100%;
+    background-color: #dfdfe0;
+    text-align: center;
+    padding-top: 10vh;
+}
+.Featured-contact{
+    height: 130vh;
+    width: 80%;
+    margin: auto;
+}
+.Featured-title{
+    padding-top: 3vh
+}
+.Featured-item{
+    height: 45vh;
+    margin-bottom: 30px ;
+    border: 0;
+}
+.Featured-img{
+    width: 90%;
+    height: 92%;
+    margin-top: 4%;
+}
+.Featured-item:after{
+    opacity: 0;
+    content: "";
+}
+.Featured-overlay{
+    height: 45%;
+    width: 60%;
+    visibility: hidden;
+}
+.Featured-item:hover .Featured-overlay , .Team-item:hover .Team-overlay{
+    visibility: visible;
+}
+.Featured-ctog{
+    line-height: 40px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+.Featured-p{
+    font-size: 24px;
+    color: white;
+    font-weight: 600;
+    margin-top: 15px
+}
+.Featured a{
+    display: inline-block;
+    height: 45px;
+    width: 45px;
+    font-size:17px;
+    background-color: #4089ff;
+    color: #0f1fd5;
+    margin: 15px 3px;
+    padding: 12px 10px 10px;
+    border-radius: 50%;
+}
+.Featured-item:hover .Featured-ctog , .Featured-item:hover .Featured-p{
+    margin-top: 0px;
+}
+.Featured-item:hover .Featured-p {
+    transition: 1.5s;
+}
+.Featured-item:hover .Featured a{
+    margin-top: 12px;
+    transition:2s;
+}
+/***************** some songs *******************/
+.songs-hvr{
+    height:23vh;
+    margin-bottom: 30px;
+}
+.songs-p1{
+    margin-top: 34px;
+}
+.songs-item{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80%;
+    text-align: left;
+}
+.songs-i{  
+    width: 20%;
+    color: #028cf2;
+    margin-top: 30px
+}
+/********************* choose *******************/
+.choose , .News-contact{
+    background-color: #f0f0f0;
+    text-align: left;
+}
+.choose-title{
+    margin-bottom: 8vh;
+}
+.choose-title:after {
+    left: 0;
+    width: 10%;
+}
+.left{
+    width: 55%;
+}
+.right{
+    width: 36%;
+}
+.choose-p {
+    word-spacing: 2px;
+    font-size: 18px;
+    color: #9f9f9f;
+    margin-bottom: 30px
+}
+.choose .ip ,.header li ,.Team-img ,.scroll-2-item ,.Featured-item ,.home{
+    position: relative;
+}
+.choose i {
+    font-size: 38px;
+    color: #028cf2
+}
+.choose-pro{
+    color: #a4a4a4;
+    position: absolute;
+    top: 10px;
+    left: 18px;
+}
+.choose img  , .scroll-1 ,.scroll-2 ,.blog ,.Pricing-item:after , .Team-hvr , .News-item:after {
+    width: 100%;
+}
+.choose ul{
+    margin-left: 50%;
+}
+.choose ul li {
+    font-size:38px;
+    color: #a4a4a4;
+}
+.choose .act ,.choose ul li:hover , .scroll-1  i , .header a:active {
+    color: #028cf2;
+}
+.choose .mid{
+    margin: 0px 18px;
+}
+/***************** scroll 1 & scroll 2 ****************/
+.scroll-1 ,.scroll-2 ,.blog{
+    height: 44vh;
+    background-image: url(../image/img2.jpeg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+    position: relative
+}
+.scroll-1-contact , .scroll-2-contact  , .blog-contact{
+    height: 50%;
+    width: 80%;
+    margin: 14vh auto
+}
+.scroll-1-item {
+    width: 25%;
+}
+.scroll-1  i {
+    font-size: 26px;
+}
+.scroll-1  b{
+    display: block;
+    margin: 13px 0px 7px;
+    font-size: 28px
+}
+/******************* some Pricing *****************/
+.Pricing{
+    background-color: #e2e2e2;
+}
+.Pricing-item {
+    height:45vh;
+}
+.Pricing-p {
+    font-size: 18px;
+    color: #9f9f9f;
+    margin: 6% 0px;
+    text-transform: uppercase;
+}
+.Pricing .permonth{
+    height: 13.5vh;
+    width: 13.5vh;
+    border: 2px solid #028cf2;
+    border-radius: 50%;
+    margin: 0px auto 20px;
+    font-weight: 600;
+}
+.Pricing .permonth .per{
+    font-size: 50px;
+    margin-top: 12px;
+}
+.Pricing .permonth .mon{
+    font-size: 15px;
+}
+.Pricing ul li {
+    list-style-type: none;
+    color: #9f9f9f;
+    margin-top: 10px
+}
+.Pricing ul .last{
+    width: 30%;
+    height: 25px;
+    border: 2px solid #028cf2;
+    margin: 20px auto 0px;
+    line-height: 22px;
+    color: black;
+    font-size: 13px;
+}
+.Pricing-item:after {
+    background-color: rgba(0,0,0,0.6);
+    transition: 0.8s;
+}
+.Pricing-item:hover .Pricing-p, .Pricing-item:hover .permonth {
+    color: red;
+}
+/******************* some scroll 2**************/
+.scroll-2{
+    background-image: url(../image/img3.jpeg);
+}
+.scroll-2-item{
+    width: 50%;
+    text-align: left;
+}
+.scroll-2 img{
+    width: 9vh;
+    height: 9vh;
+    border-radius: 50%;
+    position: absolute;
+    top: 5%;
+    left: 20%;
+}
+.scroll-2 .name{
+    margin: 17px 0px 3px 34% ;
+    font-weight: bold;
+    font-size: 22px;
+    text-transform: capitalize
+}
+.scroll-2 .career{
+    margin-left: 34%;
+    color: #ccb5ed;
+}
+.scroll-2 .traa{
+    margin:25px 0px 0px 20% ;
+    font-size: 14px;
+    line-height: 20px;
+}
+/*********************** Team *******************/
+.Team-contact{
+    width: 70%
+}
+.Team-item{
+    height: 40vh ;
+    background-color: #c7c7ed;
+    border: 0
+}
+.Team-img{
+    height: 28vh;
+    width: 80%;
+    margin: 2vh auto 0px;
+}
+.Team-overlay{
+    visibility: hidden;
+    background-color: rgba(0,0,0,0.4)
+}
+.Team-overlay a{
+    display: block;
+    height: 40px;
+    width: 40px;
+    background-color:#2999ff;
+    color: white;
+    margin-left: auto;
+}
+.Team-overlay i , .News-title{
+    padding-top: 10px;
+}
+.Team-hvr {
+    background-color: rgba(0,0,0,0.5);
+}
+.Featured-item:hover::after ,.Team-item:hover .Team-hvr ,.Pricing-item:hover .Pricing-p, .Pricing-item:hover .permonth ,.Featured-item:hover .Featured-ctog , .News-item:after{
+    transition: 1s
+}
+.Team-name{
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px 0px
+}
+.Team-career{
+    color: #9f9f9f ;
+    font-size: 14px;
+}
+.Team-item:hover .Team-career{
+    color:#0f1fd5 ;
+    transition: 0.5s;
+}
+/*********************  News  *******************/
+.News{
+    height: 78vh;
+}
+.News-item  , .News-contact{
+    height: 60vh;
+    border: 0
+}
+.News img {
+    height: 32vh;
+    width: 63%;
+    position: absolute;
+    top: 0;
+    left: 5%;
+}
+.News-info{
+    margin-top: 34vh;
+}
+.News ul li , .blog ul li{
+    list-style-type: none;
+    font-size: 12px;
+    margin-left: 5%;
+}
+.News .pp{
+    position: absolute;
+    top:  40vh;
+    left: 5%;
+}
+.News-p1{
+    font-weight: bold;
+    font-size: 20px;
+}
+.News-p2{
+    color: #9f9f9f;
+    line-height: 20px;
+    margin: 25px 0px
+}
+.News-item:after{
+    background-color: rgba(199,199,237,0.4);
+    opacity: 0;
+}
+/********************* blog *********************/
+.blog{
+    height: 40vh;
+    background-color: #525459;
+    background-image: none
+}
+.blog img{
+    height: 10vh;
+    width: 20vh;
+    margin: 7vh auto 0px;
+}
+.blog ul {
+    width: 39vh;
+    height:45px ;
+    margin:auto
+}
+.blog ul li i{
+    height: 6vh;
+    width: 6vh;
+    color: white;
+    border-radius: 50%;
+    background-color: #6195ff;
+    line-height: 6vh;
+    font-size: 22px;
+}
+.blog ul li i:hover{
+    background-color: #156ffa;
+    transition: 0.5s
+}
+.blog ul li{
+    margin: 3vh 0.25vh;
+}
+.header li ,.blog .last {
+    float: right;
+}
+.blog p{
+    color: #92929d;
+    font-size: 12px;
+}            
